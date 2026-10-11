@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="30가지 디자인 스타일의 이미지 예시를 살펴보고 원문 프롬프트를 간편하게 복사하세요.">
+  <meta name="theme-color" content="#f6f6f0">
+  <title>바이브 코딩 30가지 디자인 프롬프트</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="gallery-core.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#collection">디자인 목록으로 건너뛰기</a>
+  <header class="site-header wrap">
+    <a class="brand" href="./" aria-label="디자인 프롬프트 홈"><span class="brand-mark" aria-hidden="true">✳</span> DESIGN PROMPTS<span class="edition">/ 30</span></a>
+    <button class="quiet-button" id="updates-button" type="button">업데이트 내역 <span aria-hidden="true">↗</span></button>
+  </header>
+  <main class="wrap">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="eyebrow"><span class="status-dot"></span> VIBE CODING · DESIGN COLLECTION</div>
+      <h1 id="page-title">바이브 코딩<br><span class="accent-word">30가지</span> 디자인 프롬프트<span class="title-star" aria-hidden="true">✳</span></h1>
+      <div class="intro-bottom"><p>마음에 드는 스타일을 고르고,<br class="mobile-break"> 프롬프트를 복사해 바로 시작하세요.</p><span class="collection-note">6개 카테고리 <span aria-hidden="true">/</span> 30개의 아이디어</span></div>
+    </section>
+    <section class="collection" id="collection" aria-label="디자인 프롬프트 갤러리">
+      <div class="collection-toolbar">
+        <h2>스타일 둘러보기 <span id="result-count">30</span></h2>
+        <div class="search-box"><span aria-hidden="true">⌕</span><label class="sr-only" for="search">디자인 제목, 분위기, 색상 검색</label><input id="search" type="search" placeholder="제목, 분위기, 색상 검색" autocomplete="off"><span class="search-hint" aria-hidden="true">검색</span></div>
+      </div>
+      <div class="filters" id="filters" role="group" aria-label="디자인 카테고리"></div>
+      <div class="results-meta"><p id="results-label" aria-live="polite">전체 디자인 30개</p><span>이미지를 누르면 프롬프트가 열립니다 <span aria-hidden="true">↗</span></span></div>
+      <div class="gallery" id="gallery"></div>
+      <div class="empty-state" id="empty-state" hidden><span aria-hidden="true">⌕</span><h3>검색 결과가 없습니다</h3><p>다른 단어로 검색하거나 카테고리를 바꿔보세요.</p><button id="reset-button" class="primary-button" type="button">전체 디자인 보기</button></div>
+      <noscript>프롬프트 목록을 보려면 브라우저에서 JavaScript를 활성화해 주세요.</noscript>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><p>DESIGN PROMPTS <span>이미지로 고르고, 프롬프트로 시작하세요.</span></p><span>이미지는 AI로 생성한 디자인 예시입니다.</span></footer>
+  <dialog class="prompt-dialog" id="prompt-dialog" aria-labelledby="modal-title">
+    <div class="modal-top"><span id="modal-category" class="eyebrow"></span><button class="icon-button" data-close type="button" aria-label="프롬프트 닫기">×</button></div>
+    <h2 id="modal-title"></h2><p class="modal-tone" id="modal-tone"></p>
+    <img class="modal-image" id="modal-image" alt="">
+    <div class="prompt-heading"><h3>디자인 프롬프트</h3><span>원문 그대로 · 바로 복사</span></div>
+    <div class="copy-box"><label class="sr-only" for="prompt-text">복사할 프롬프트 원문</label><textarea id="prompt-text" readonly spellcheck="false"></textarea></div>
+    <div class="modal-actions"><p id="copy-status" role="status" aria-live="polite">복사한 프롬프트를 AI 도구에 붙여넣으세요.</p><button id="copy-button" class="primary-button" type="button">프롬프트 복사 <span aria-hidden="true">⧉</span></button></div>
+  </dialog>
+  <dialog class="updates-dialog" id="updates-dialog" aria-labelledby="updates-title"><div class="modal-top"><span class="eyebrow">CHANGELOG</span><button class="icon-button" data-close type="button" aria-label="업데이트 내역 닫기">×</button></div><h2 id="updates-title">업데이트 내역</h2><time datetime="2026-10-11">2026.10.11 · 첫 번째 버전</time><ul><li>30가지 디자인 이미지와 원문 프롬프트 수록</li><li>6개 카테고리 필터 및 제목·분위기·색상 검색</li><li>이미지 미리보기와 원클릭 프롬프트 복사</li><li>모바일·태블릿·데스크톱 반응형 화면</li></ul></dialog>
+</body>
+</html>

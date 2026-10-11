@@ -1,0 +1,9 @@
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const {filterPrompts}=require('../dist/gallery-core.js');
+const sample=[{id:'학습-01',category:'학습',title:'노트 낙서',prompt:'파란 볼펜 자유로움'},{id:'자연-01',category:'자연',title:'보타니컬 가든',prompt:'세이지 그린 수채화'}];
+test('빈 검색은 모든 항목을 보존한다',()=>assert.deepEqual(filterPrompts(sample,'전체',''),sample));
+test('카테고리와 검색은 동시에 적용된다',()=>assert.equal(filterPrompts(sample,'학습','그린').length,0));
+test('띄어쓰기 없이도 제목을 찾는다',()=>assert.equal(filterPrompts(sample,'전체','노트낙서')[0].id,'학습-01'));
+test('원문 분위기도 검색한다',()=>assert.equal(filterPrompts(sample,'자연','수채화')[0].id,'자연-01'));
+test('일치하지 않으면 빈 결과를 반환한다',()=>assert.deepEqual(filterPrompts(sample,'전체','없는결과'),[]));
