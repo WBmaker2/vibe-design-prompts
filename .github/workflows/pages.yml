@@ -27,6 +27,7 @@ jobs:
         run: node --test scripts/core.test.cjs
       - name: Check browser scripts
         run: |
+          node --check dist/gallery-core.js
           node --check dist/app.js
           node --check dist/data.js
       - name: Configure Pages

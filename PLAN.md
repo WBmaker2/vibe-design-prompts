@@ -22,4 +22,4 @@
 
 배포 계획 변경: 사용자가 공개 저장소 업로드와 배포를 요청했다. Sites 업로드는 자동 승인 검토에서 거절되어 진행하지 않으며, GitHub 공개 저장소와 같은 계정의 GitHub Pages로 배포한다.
 
-완료: GitHub 공개 저장소 https://github.com/wbmaker01-ai/vibe-design-prompts 및 공개 사이트 https://wbmaker01-ai.github.io/vibe-design-prompts/ . 배포 성공 후 실제 사이트에서 검색과 클립보드 원문 일치를 확인했다.
+완료: GitHub 공개 저장소 https://github.com/WBmaker2/vibe-design-prompts 및 공개 사이트 https://WBmaker2.github.io/vibe-design-prompts/ .
